@@ -7,7 +7,11 @@ data = pd.read_csv("C:/Users/HI/Downloads/sensor.csv/sensor.csv")
 
 # Drop any columns with missing values
 data.dropna(axis=1, inplace=True)
-
+imputer = SimpleImputer(strategy='mean')
+data = data.select_dtypes(include=[np.number])
+data = data.drop(["id"], axis=1)  # remove id column
+data = data[data.status != "NORMAL"]  # remove "NORMAL" status
+data = data.drop(["status"], axis=1)  # remove status column
 # Scale the data using MinMaxScaler
 scaler = MinMaxScaler()
 X = scaler.fit_transform(data.values)
