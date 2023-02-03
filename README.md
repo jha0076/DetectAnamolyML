@@ -9,6 +9,10 @@ After training the classifier, we use it to predict the anomalies in the sensor 
 The results obtained from this project can be improved by using other machine learning algorithms or by combining the results from multiple algorithms. Another approach would be to use deep learning techniques, such as autoencoders or neural networks, to build an anomaly detection model. These techniques have been shown to be effective in detecting anomalies in complex, high-dimensional data.
 
 In conclusion, this project demonstrates how OneClassSVM can be used to detect anomalies in sensor data. The code provided can be used as a starting point for building an anomaly detection model for other datasets or for further improvements. Anomaly detection is a critical task in various domains, and this project provides a simple example of how it can be done using machine learning algorithms.
-
-
-
+**SkillSet
+Data pre-processing: handling missing values and normalizing data.
+Machine Learning: using the OneClassSVM algorithm for anomaly detection.
+Data visualization: using plots to represent the results.
+Data Analysis: evaluating the performance of the model and analyzing the results.
+Programming: using Python and libraries such as pandas and scikit-learn.
+**
